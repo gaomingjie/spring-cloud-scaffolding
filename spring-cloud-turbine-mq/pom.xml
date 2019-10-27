@@ -3,7 +3,7 @@
   <parent>
         <artifactId>spring-cloud-scaffolding</artifactId>
         <groupId>me.peng</groupId>
-        <version>1.0-SNAPSHOT</version>
+        <version>1.0</version>
    </parent>
   <artifactId>spring-cloud-turbine-mq</artifactId>
   <description>以MQ的方式监控hystrix情况</description>

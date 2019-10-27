@@ -23,7 +23,7 @@ Spring Boot Admin 是一个 管理 和 监控 Spring Boot 应用程序 的一款
     <parent>
         <artifactId>spring-cloud-scaffolding</artifactId>
         <groupId>me.peng</groupId>
-        <version>1.0-SNAPSHOT</version>
+        <version>1.0</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 

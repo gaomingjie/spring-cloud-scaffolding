@@ -43,13 +43,14 @@ eureka:
 
 zuul:
 # 集成限流，打开注释 为所有服务进行限流,3秒内只能请求1次,并且请求时间总数不能超过5秒
-#  ratelimit:
-#    enabled: true
-#    repository: REDIS
-#    default-policy:
-#      limit: 1
-#      quota: 5
-#      refresh-interval: 3
+  ratelimit:
+    enabled: true
+    repository: REDIS
+    default-policy:
+      limit: 1
+      quota: 5
+      refresh-interval: 3
+
   host:
     connect-timeout-millis: 10000
     socket-timeout-millis: 60000

@@ -159,10 +159,10 @@ spring:
   application:
     name: auth-service
   datasource:
-    driver-class-name: com.mysql.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/ceshi?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8
-    username: huaxin
-    password: Koreyoshih527
+    username: root
+    password: siba01
   jpa:
     hibernate:
       ddl-auto: update

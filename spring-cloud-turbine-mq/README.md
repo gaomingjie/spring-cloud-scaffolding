@@ -25,10 +25,10 @@ Spring Cloud 在封装 Turbine 的时候，还实现了基于消息代理的收�
 ```
 server.port=8761
 spring.application.name=userservice
-spring.datasource.url=jdbc:mysql://localhost:3306/ceshi
-spring.datasource.username=huaxin
-spring.datasource.password=Koreyoshih527
-spring.datasource.driver-class-name=com.mysql.jdbc.Driver
+spring.datasource.url=jdbc:mysql://localhost:3306/ceshi?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8&serverTimezone=UTC
+spring.datasource.username=root
+spring.datasource.password=siba01
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 spring.zipkin.base-url=http://localhost:9411
 spring.sleuth.feign.enabled=true
 spring.sleuth.sampler.probability=1.0
@@ -58,7 +58,7 @@ hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds=3000
   <parent>
         <artifactId>spring-cloud-scaffolding</artifactId>
         <groupId>me.peng</groupId>
-        <version>1.0-SNAPSHOT</version>
+        <version>1.0</version>
    </parent>
   <artifactId>spring-cloud-turbine-mq</artifactId>
   <description>以MQ的方式监控hystrix情况</description>
